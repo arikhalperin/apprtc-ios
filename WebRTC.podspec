@@ -12,6 +12,6 @@ Pod::Spec.new do |s|
   s.preserve_paths     = "WebRTC","Lib/libWebRTC.a"
   s.vendored_libraries = 'Lib/libWebRTC.a'
   s.requires_arc       = true
-  s.frameworks         = "QuartzCore", "OpenGLES", "CoreGraphics", "CoreVideo", "CoreMedia", "CoreAudio", "AVFoundation", "AudioToolbox", "GLKit", "CFNetwork", "Security"
+  s.frameworks         = "QuartzCore", "OpenGLES", "CoreGraphics", "CoreVideo", "CoreMedia", "CoreAudio", "AVFoundation", "AudioToolbox", "GLKit", "CFNetwork", "Security",'AVFoundation', 'AudioToolbox', 'CoreGraphics', 'CoreMedia', 'GLKit', 'UIKit', 'VideoToolbox'
   s.libraries          = "sqlite3", "stdc++.6", "icucore", "c++"
 end
