@@ -16,6 +16,8 @@
 
 @protocol ARDRoomServerClient <NSObject>
 
+-(void)setServerUrl:(NSString *)url;
+
 - (void)joinRoomWithRoomId:(NSString *)roomId
                 isLoopback:(BOOL)isLoopback
          completionHandler:(void (^)(ARDJoinResponse *response,
