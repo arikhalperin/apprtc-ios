@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.author             = "ISBX"
   s.license            = { :type => "BSD", :file => "LICENSE" }
   s.platform           = :ios, "7.0"
-  s.source             = { :git => 'https://github.com/arikhalperin/apprtc-ios.git', :tag => '1.0.3' }
+  s.source             = { :git => 'https://github.com/arikhalperin/apprtc-ios.git', :tag => 'v1.0' }
   s.source_files       = "Lib/*.{h,m,c}"
   s.requires_arc       = true
   s.frameworks         = "QuartzCore", "OpenGLES", "CoreGraphics", "CoreVideo", "CoreMedia", "CoreAudio", "AVFoundation", "AudioToolbox", "GLKit", "CFNetwork", "Security"
