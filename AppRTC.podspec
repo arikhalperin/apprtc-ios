@@ -1,5 +1,5 @@
 Pod::Spec.new do |s|
-  s.name               = "AppRTC"
+  s.name               = "WebRTC"
   s.version            = "1.0.3"
   s.summary            = "iOS video chat based on WebRTC"
   s.homepage           = "https://github.com/ISBX/apprtc-ios"
