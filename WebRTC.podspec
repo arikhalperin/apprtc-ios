@@ -9,7 +9,7 @@ Pod::Spec.new do |s|
   s.source             = { :git => 'https://github.com/arikhalperin/apprtc-ios.git', :tag => 'v1.3' }
   s.source_files       = "Lib/*/*.*"
   s.header_mappings_dir = "Lib/WebRTC"
-  s.preserve_paths     = "WebRTC"
+  s.preserve_paths     = "WebRTC","Lib/libWebRTC.a"
   s.requires_arc       = true
   s.frameworks         = "QuartzCore", "OpenGLES", "CoreGraphics", "CoreVideo", "CoreMedia", "CoreAudio", "AVFoundation", "AudioToolbox", "GLKit", "CFNetwork", "Security"
   s.libraries          = "sqlite3", "stdc++.6", "icucore", "c++"
