@@ -1,0 +1,709 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4D4001CF1DC741C800F6EFF3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001CE1DC741C800F6EFF3 /* main.m */; };
+		4D4001D21DC741C800F6EFF3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001D11DC741C800F6EFF3 /* AppDelegate.m */; };
+		4D4001D51DC741C800F6EFF3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001D41DC741C800F6EFF3 /* MainViewController.m */; };
+		4D4001D81DC741C800F6EFF3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4001D61DC741C800F6EFF3 /* Main.storyboard */; };
+		4D4001DA1DC741C800F6EFF3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D4001D91DC741C800F6EFF3 /* Assets.xcassets */; };
+		4D4001DD1DC741C800F6EFF3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D4001DB1DC741C800F6EFF3 /* LaunchScreen.storyboard */; };
+		4D4001E81DC741C800F6EFF3 /* KrankyGeekDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001E71DC741C800F6EFF3 /* KrankyGeekDemoTests.m */; };
+		4D4001F31DC741C800F6EFF3 /* KrankyGeekDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4001F21DC741C800F6EFF3 /* KrankyGeekDemoUITests.m */; };
+		4D4002051DC74C5000F6EFF3 /* CallViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4002041DC74C5000F6EFF3 /* CallViewController.m */; };
+		4D4002081DC751D400F6EFF3 /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4002071DC751D400F6EFF3 /* VideoView.m */; };
+		4D40020E1DC754FD00F6EFF3 /* CallView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D40020D1DC754FD00F6EFF3 /* CallView.m */; };
+		4D40021D1DC886E700F6EFF3 /* ic_call_end_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002101DC886E700F6EFF3 /* ic_call_end_black_24dp.png */; };
+		4D40021E1DC886E700F6EFF3 /* ic_call_end_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002111DC886E700F6EFF3 /* ic_call_end_black_24dp@2x.png */; };
+		4D40021F1DC886E700F6EFF3 /* ic_clear_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002121DC886E700F6EFF3 /* ic_clear_black_24dp.png */; };
+		4D4002201DC886E700F6EFF3 /* ic_clear_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002131DC886E700F6EFF3 /* ic_clear_black_24dp@2x.png */; };
+		4D4002211DC886E700F6EFF3 /* ic_surround_sound_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002141DC886E700F6EFF3 /* ic_surround_sound_black_24dp.png */; };
+		4D4002221DC886E700F6EFF3 /* ic_surround_sound_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002151DC886E700F6EFF3 /* ic_surround_sound_black_24dp@2x.png */; };
+		4D4002231DC886E700F6EFF3 /* ic_switch_video_black_24dp.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002161DC886E700F6EFF3 /* ic_switch_video_black_24dp.png */; };
+		4D4002241DC886E700F6EFF3 /* ic_switch_video_black_24dp@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002171DC886E700F6EFF3 /* ic_switch_video_black_24dp@2x.png */; };
+		4D4002251DC886E700F6EFF3 /* iPhone5@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002181DC886E700F6EFF3 /* iPhone5@2x.png */; };
+		4D4002261DC886E700F6EFF3 /* iPhone6@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4002191DC886E700F6EFF3 /* iPhone6@2x.png */; };
+		4D4002271DC886E700F6EFF3 /* iPhone6p@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D40021A1DC886E700F6EFF3 /* iPhone6p@3x.png */; };
+		4D4002281DC886E700F6EFF3 /* mozart.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4D40021B1DC886E700F6EFF3 /* mozart.mp3 */; };
+		4D4002291DC886E700F6EFF3 /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 4D40021C1DC886E700F6EFF3 /* Roboto-Regular.ttf */; };
+		CCEED3D1433C50EA2348F6BE /* libPods-KrankyGeekDemo.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A5C1A3BAE975715B72EF1D7 /* libPods-KrankyGeekDemo.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4D4001E41DC741C800F6EFF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D4001C21DC741C800F6EFF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D4001C91DC741C800F6EFF3;
+			remoteInfo = KrankyGeekDemo;
+		};
+		4D4001EF1DC741C800F6EFF3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4D4001C21DC741C800F6EFF3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4D4001C91DC741C800F6EFF3;
+			remoteInfo = KrankyGeekDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D4001CA1DC741C800F6EFF3 /* KrankyGeekDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KrankyGeekDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4001CE1DC741C800F6EFF3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		4D4001D01DC741C800F6EFF3 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		4D4001D11DC741C800F6EFF3 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		4D4001D31DC741C800F6EFF3 /* MainViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
+		4D4001D41DC741C800F6EFF3 /* MainViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		4D4001D71DC741C800F6EFF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4D4001D91DC741C800F6EFF3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4D4001DC1DC741C800F6EFF3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4D4001DE1DC741C800F6EFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4001E31DC741C800F6EFF3 /* KrankyGeekDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrankyGeekDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4001E71DC741C800F6EFF3 /* KrankyGeekDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrankyGeekDemoTests.m; sourceTree = "<group>"; };
+		4D4001E91DC741C800F6EFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4001EE1DC741C800F6EFF3 /* KrankyGeekDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KrankyGeekDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4D4001F21DC741C800F6EFF3 /* KrankyGeekDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KrankyGeekDemoUITests.m; sourceTree = "<group>"; };
+		4D4001F41DC741C800F6EFF3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4D4002031DC74C5000F6EFF3 /* CallViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallViewController.h; sourceTree = "<group>"; };
+		4D4002041DC74C5000F6EFF3 /* CallViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallViewController.m; sourceTree = "<group>"; };
+		4D4002061DC751D400F6EFF3 /* VideoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoView.h; sourceTree = "<group>"; };
+		4D4002071DC751D400F6EFF3 /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
+		4D40020C1DC754FD00F6EFF3 /* CallView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CallView.h; sourceTree = "<group>"; };
+		4D40020D1DC754FD00F6EFF3 /* CallView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CallView.m; sourceTree = "<group>"; };
+		4D4002101DC886E700F6EFF3 /* ic_call_end_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_call_end_black_24dp.png; path = KrankyGeekDemo/resources/ic_call_end_black_24dp.png; sourceTree = "<group>"; };
+		4D4002111DC886E700F6EFF3 /* ic_call_end_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_call_end_black_24dp@2x.png"; path = "KrankyGeekDemo/resources/ic_call_end_black_24dp@2x.png"; sourceTree = "<group>"; };
+		4D4002121DC886E700F6EFF3 /* ic_clear_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_clear_black_24dp.png; path = KrankyGeekDemo/resources/ic_clear_black_24dp.png; sourceTree = "<group>"; };
+		4D4002131DC886E700F6EFF3 /* ic_clear_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_clear_black_24dp@2x.png"; path = "KrankyGeekDemo/resources/ic_clear_black_24dp@2x.png"; sourceTree = "<group>"; };
+		4D4002141DC886E700F6EFF3 /* ic_surround_sound_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_surround_sound_black_24dp.png; path = KrankyGeekDemo/resources/ic_surround_sound_black_24dp.png; sourceTree = "<group>"; };
+		4D4002151DC886E700F6EFF3 /* ic_surround_sound_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_surround_sound_black_24dp@2x.png"; path = "KrankyGeekDemo/resources/ic_surround_sound_black_24dp@2x.png"; sourceTree = "<group>"; };
+		4D4002161DC886E700F6EFF3 /* ic_switch_video_black_24dp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_switch_video_black_24dp.png; path = KrankyGeekDemo/resources/ic_switch_video_black_24dp.png; sourceTree = "<group>"; };
+		4D4002171DC886E700F6EFF3 /* ic_switch_video_black_24dp@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "ic_switch_video_black_24dp@2x.png"; path = "KrankyGeekDemo/resources/ic_switch_video_black_24dp@2x.png"; sourceTree = "<group>"; };
+		4D4002181DC886E700F6EFF3 /* iPhone5@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone5@2x.png"; path = "KrankyGeekDemo/resources/iPhone5@2x.png"; sourceTree = "<group>"; };
+		4D4002191DC886E700F6EFF3 /* iPhone6@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone6@2x.png"; path = "KrankyGeekDemo/resources/iPhone6@2x.png"; sourceTree = "<group>"; };
+		4D40021A1DC886E700F6EFF3 /* iPhone6p@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "iPhone6p@3x.png"; path = "KrankyGeekDemo/resources/iPhone6p@3x.png"; sourceTree = "<group>"; };
+		4D40021B1DC886E700F6EFF3 /* mozart.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = mozart.mp3; path = KrankyGeekDemo/resources/mozart.mp3; sourceTree = "<group>"; };
+		4D40021C1DC886E700F6EFF3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "KrankyGeekDemo/resources/Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		4D614FD81DCCE99800A3A8A6 /* libWebRTC.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libWebRTC.a; path = Pods/WebRTC/Lib/libWebRTC.a; sourceTree = "<group>"; };
+		6A5C1A3BAE975715B72EF1D7 /* libPods-KrankyGeekDemo.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KrankyGeekDemo.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		6F1271C6974D5B7E5CE499BF /* Pods-KrankyGeekDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrankyGeekDemo.release.xcconfig"; path = "Pods/Target Support Files/Pods-KrankyGeekDemo/Pods-KrankyGeekDemo.release.xcconfig"; sourceTree = "<group>"; };
+		C04604F6E381D7B0516EBCAC /* Pods-KrankyGeekDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KrankyGeekDemo.debug.xcconfig"; path = "Pods/Target Support Files/Pods-KrankyGeekDemo/Pods-KrankyGeekDemo.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4D4001C71DC741C800F6EFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCEED3D1433C50EA2348F6BE /* libPods-KrankyGeekDemo.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001E01DC741C800F6EFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001EB1DC741C800F6EFF3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4D4001C11DC741C800F6EFF3 = {
+			isa = PBXGroup;
+			children = (
+				4D40020F1DC8856600F6EFF3 /* Resources */,
+				4D4001CC1DC741C800F6EFF3 /* KrankyGeekDemo */,
+				4D4001E61DC741C800F6EFF3 /* KrankyGeekDemoTests */,
+				4D4001F11DC741C800F6EFF3 /* KrankyGeekDemoUITests */,
+				4D4001CB1DC741C800F6EFF3 /* Products */,
+				6572E5C7D7627D214932D45C /* Pods */,
+				6C2CE62F4A36BDB2CB8D6B71 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		4D4001CB1DC741C800F6EFF3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4D4001CA1DC741C800F6EFF3 /* KrankyGeekDemo.app */,
+				4D4001E31DC741C800F6EFF3 /* KrankyGeekDemoTests.xctest */,
+				4D4001EE1DC741C800F6EFF3 /* KrankyGeekDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4D4001CC1DC741C800F6EFF3 /* KrankyGeekDemo */ = {
+			isa = PBXGroup;
+			children = (
+				4D4001D01DC741C800F6EFF3 /* AppDelegate.h */,
+				4D4001D11DC741C800F6EFF3 /* AppDelegate.m */,
+				4D4001D31DC741C800F6EFF3 /* MainViewController.h */,
+				4D4001D41DC741C800F6EFF3 /* MainViewController.m */,
+				4D4001D61DC741C800F6EFF3 /* Main.storyboard */,
+				4D4001D91DC741C800F6EFF3 /* Assets.xcassets */,
+				4D4001DB1DC741C800F6EFF3 /* LaunchScreen.storyboard */,
+				4D4001DE1DC741C800F6EFF3 /* Info.plist */,
+				4D4001CD1DC741C800F6EFF3 /* Supporting Files */,
+				4D4002031DC74C5000F6EFF3 /* CallViewController.h */,
+				4D4002041DC74C5000F6EFF3 /* CallViewController.m */,
+				4D4002061DC751D400F6EFF3 /* VideoView.h */,
+				4D4002071DC751D400F6EFF3 /* VideoView.m */,
+				4D40020C1DC754FD00F6EFF3 /* CallView.h */,
+				4D40020D1DC754FD00F6EFF3 /* CallView.m */,
+			);
+			path = KrankyGeekDemo;
+			sourceTree = "<group>";
+		};
+		4D4001CD1DC741C800F6EFF3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				4D4001CE1DC741C800F6EFF3 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		4D4001E61DC741C800F6EFF3 /* KrankyGeekDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				4D4001E71DC741C800F6EFF3 /* KrankyGeekDemoTests.m */,
+				4D4001E91DC741C800F6EFF3 /* Info.plist */,
+			);
+			path = KrankyGeekDemoTests;
+			sourceTree = "<group>";
+		};
+		4D4001F11DC741C800F6EFF3 /* KrankyGeekDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4D4001F21DC741C800F6EFF3 /* KrankyGeekDemoUITests.m */,
+				4D4001F41DC741C800F6EFF3 /* Info.plist */,
+			);
+			path = KrankyGeekDemoUITests;
+			sourceTree = "<group>";
+		};
+		4D40020F1DC8856600F6EFF3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4D4002101DC886E700F6EFF3 /* ic_call_end_black_24dp.png */,
+				4D4002111DC886E700F6EFF3 /* ic_call_end_black_24dp@2x.png */,
+				4D4002121DC886E700F6EFF3 /* ic_clear_black_24dp.png */,
+				4D4002131DC886E700F6EFF3 /* ic_clear_black_24dp@2x.png */,
+				4D4002141DC886E700F6EFF3 /* ic_surround_sound_black_24dp.png */,
+				4D4002151DC886E700F6EFF3 /* ic_surround_sound_black_24dp@2x.png */,
+				4D4002161DC886E700F6EFF3 /* ic_switch_video_black_24dp.png */,
+				4D4002171DC886E700F6EFF3 /* ic_switch_video_black_24dp@2x.png */,
+				4D4002181DC886E700F6EFF3 /* iPhone5@2x.png */,
+				4D4002191DC886E700F6EFF3 /* iPhone6@2x.png */,
+				4D40021A1DC886E700F6EFF3 /* iPhone6p@3x.png */,
+				4D40021B1DC886E700F6EFF3 /* mozart.mp3 */,
+				4D40021C1DC886E700F6EFF3 /* Roboto-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		6572E5C7D7627D214932D45C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C04604F6E381D7B0516EBCAC /* Pods-KrankyGeekDemo.debug.xcconfig */,
+				6F1271C6974D5B7E5CE499BF /* Pods-KrankyGeekDemo.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6C2CE62F4A36BDB2CB8D6B71 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4D614FD81DCCE99800A3A8A6 /* libWebRTC.a */,
+				6A5C1A3BAE975715B72EF1D7 /* libPods-KrankyGeekDemo.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4D4001C91DC741C800F6EFF3 /* KrankyGeekDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4001F71DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemo" */;
+			buildPhases = (
+				FE6970FADBE502F7DD8BEC62 /* [CP] Check Pods Manifest.lock */,
+				4D4001C61DC741C800F6EFF3 /* Sources */,
+				4D4001C71DC741C800F6EFF3 /* Frameworks */,
+				4D4001C81DC741C800F6EFF3 /* Resources */,
+				91AB745CBE6DE0B6065F76DA /* [CP] Embed Pods Frameworks */,
+				C9E09D1F08F7BA637AAF722C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KrankyGeekDemo;
+			productName = KrankyGeekDemo;
+			productReference = 4D4001CA1DC741C800F6EFF3 /* KrankyGeekDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4D4001E21DC741C800F6EFF3 /* KrankyGeekDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4001FA1DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemoTests" */;
+			buildPhases = (
+				4D4001DF1DC741C800F6EFF3 /* Sources */,
+				4D4001E01DC741C800F6EFF3 /* Frameworks */,
+				4D4001E11DC741C800F6EFF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D4001E51DC741C800F6EFF3 /* PBXTargetDependency */,
+			);
+			name = KrankyGeekDemoTests;
+			productName = KrankyGeekDemoTests;
+			productReference = 4D4001E31DC741C800F6EFF3 /* KrankyGeekDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4D4001ED1DC741C800F6EFF3 /* KrankyGeekDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4D4001FD1DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemoUITests" */;
+			buildPhases = (
+				4D4001EA1DC741C800F6EFF3 /* Sources */,
+				4D4001EB1DC741C800F6EFF3 /* Frameworks */,
+				4D4001EC1DC741C800F6EFF3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4D4001F01DC741C800F6EFF3 /* PBXTargetDependency */,
+			);
+			name = KrankyGeekDemoUITests;
+			productName = KrankyGeekDemoUITests;
+			productReference = 4D4001EE1DC741C800F6EFF3 /* KrankyGeekDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4D4001C21DC741C800F6EFF3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "arik halperin";
+				TargetAttributes = {
+					4D4001C91DC741C800F6EFF3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q6TW2UWEBY;
+						ProvisioningStyle = Automatic;
+					};
+					4D4001E21DC741C800F6EFF3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q6TW2UWEBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D4001C91DC741C800F6EFF3;
+					};
+					4D4001ED1DC741C800F6EFF3 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = Q6TW2UWEBY;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4D4001C91DC741C800F6EFF3;
+					};
+				};
+			};
+			buildConfigurationList = 4D4001C51DC741C800F6EFF3 /* Build configuration list for PBXProject "KrankyGeekDemo" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4D4001C11DC741C800F6EFF3;
+			productRefGroup = 4D4001CB1DC741C800F6EFF3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4D4001C91DC741C800F6EFF3 /* KrankyGeekDemo */,
+				4D4001E21DC741C800F6EFF3 /* KrankyGeekDemoTests */,
+				4D4001ED1DC741C800F6EFF3 /* KrankyGeekDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4D4001C81DC741C800F6EFF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4002271DC886E700F6EFF3 /* iPhone6p@3x.png in Resources */,
+				4D4002261DC886E700F6EFF3 /* iPhone6@2x.png in Resources */,
+				4D4002291DC886E700F6EFF3 /* Roboto-Regular.ttf in Resources */,
+				4D40021E1DC886E700F6EFF3 /* ic_call_end_black_24dp@2x.png in Resources */,
+				4D4002231DC886E700F6EFF3 /* ic_switch_video_black_24dp.png in Resources */,
+				4D40021F1DC886E700F6EFF3 /* ic_clear_black_24dp.png in Resources */,
+				4D4002251DC886E700F6EFF3 /* iPhone5@2x.png in Resources */,
+				4D4002211DC886E700F6EFF3 /* ic_surround_sound_black_24dp.png in Resources */,
+				4D4001DD1DC741C800F6EFF3 /* LaunchScreen.storyboard in Resources */,
+				4D4001DA1DC741C800F6EFF3 /* Assets.xcassets in Resources */,
+				4D4002221DC886E700F6EFF3 /* ic_surround_sound_black_24dp@2x.png in Resources */,
+				4D4002241DC886E700F6EFF3 /* ic_switch_video_black_24dp@2x.png in Resources */,
+				4D4002281DC886E700F6EFF3 /* mozart.mp3 in Resources */,
+				4D4001D81DC741C800F6EFF3 /* Main.storyboard in Resources */,
+				4D4002201DC886E700F6EFF3 /* ic_clear_black_24dp@2x.png in Resources */,
+				4D40021D1DC886E700F6EFF3 /* ic_call_end_black_24dp.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001E11DC741C800F6EFF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001EC1DC741C800F6EFF3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		91AB745CBE6DE0B6065F76DA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrankyGeekDemo/Pods-KrankyGeekDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C9E09D1F08F7BA637AAF722C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-KrankyGeekDemo/Pods-KrankyGeekDemo-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FE6970FADBE502F7DD8BEC62 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4D4001C61DC741C800F6EFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D40020E1DC754FD00F6EFF3 /* CallView.m in Sources */,
+				4D4001D51DC741C800F6EFF3 /* MainViewController.m in Sources */,
+				4D4002081DC751D400F6EFF3 /* VideoView.m in Sources */,
+				4D4001D21DC741C800F6EFF3 /* AppDelegate.m in Sources */,
+				4D4002051DC74C5000F6EFF3 /* CallViewController.m in Sources */,
+				4D4001CF1DC741C800F6EFF3 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001DF1DC741C800F6EFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4001E81DC741C800F6EFF3 /* KrankyGeekDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4D4001EA1DC741C800F6EFF3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4D4001F31DC741C800F6EFF3 /* KrankyGeekDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4D4001E51DC741C800F6EFF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D4001C91DC741C800F6EFF3 /* KrankyGeekDemo */;
+			targetProxy = 4D4001E41DC741C800F6EFF3 /* PBXContainerItemProxy */;
+		};
+		4D4001F01DC741C800F6EFF3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4D4001C91DC741C800F6EFF3 /* KrankyGeekDemo */;
+			targetProxy = 4D4001EF1DC741C800F6EFF3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4D4001D61DC741C800F6EFF3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D4001D71DC741C800F6EFF3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4D4001DB1DC741C800F6EFF3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4D4001DC1DC741C800F6EFF3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4D4001F51DC741C800F6EFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4D4001F61DC741C800F6EFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D4001F81DC741C800F6EFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C04604F6E381D7B0516EBCAC /* Pods-KrankyGeekDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = KrankyGeekDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WebRTC/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		4D4001F91DC741C800F6EFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6F1271C6974D5B7E5CE499BF /* Pods-KrankyGeekDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				ENABLE_BITCODE = NO;
+				INFOPLIST_FILE = KrankyGeekDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Pods/WebRTC/Lib",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		4D4001FB1DC741C800F6EFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				INFOPLIST_FILE = KrankyGeekDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrankyGeekDemo.app/KrankyGeekDemo";
+			};
+			name = Debug;
+		};
+		4D4001FC1DC741C800F6EFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				INFOPLIST_FILE = KrankyGeekDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KrankyGeekDemo.app/KrankyGeekDemo";
+			};
+			name = Release;
+		};
+		4D4001FE1DC741C800F6EFF3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				INFOPLIST_FILE = KrankyGeekDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KrankyGeekDemo;
+			};
+			name = Debug;
+		};
+		4D4001FF1DC741C800F6EFF3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEVELOPMENT_TEAM = Q6TW2UWEBY;
+				INFOPLIST_FILE = KrankyGeekDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.greenfield.KrankyGeekDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = KrankyGeekDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4D4001C51DC741C800F6EFF3 /* Build configuration list for PBXProject "KrankyGeekDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4001F51DC741C800F6EFF3 /* Debug */,
+				4D4001F61DC741C800F6EFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D4001F71DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4001F81DC741C800F6EFF3 /* Debug */,
+				4D4001F91DC741C800F6EFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D4001FA1DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4001FB1DC741C800F6EFF3 /* Debug */,
+				4D4001FC1DC741C800F6EFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4D4001FD1DC741C800F6EFF3 /* Build configuration list for PBXNativeTarget "KrankyGeekDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D4001FE1DC741C800F6EFF3 /* Debug */,
+				4D4001FF1DC741C800F6EFF3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4D4001C21DC741C800F6EFF3 /* Project object */;
+}
