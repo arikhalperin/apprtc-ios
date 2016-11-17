@@ -62,8 +62,7 @@ export LIBFILES='obj/webrtc/examples/libapprtc_common.a
 	obj/webrtc/modules/video_coding/libwebrtc_i420.a 
 	obj/webrtc/modules/video_coding/libwebrtc_vp8.a  
 	obj/third_party/libvpx/libvpx.a  
-	obj/webrtc/modules/video_coding/libwebrtc_vp9.a 
-	obj/webrtc/modules/video_processing/libvideo_processing.a 
+	obj/webrtc/modules/video_coding/libwebrtc_vp9.a  
 	obj/webrtc/media/librtc_media.a 
 	obj/third_party/usrsctp/libusrsctp.a 
 	obj/webrtc/modules/video_capture/libvideo_capture_internal_impl.a 
@@ -77,7 +76,8 @@ export LIBFILES='obj/webrtc/examples/libapprtc_common.a
 export DEVICE_LIBFILES_COMMON='obj/third_party/libyuv/libyuv_neon.a 
 	obj/webrtc/common_audio/libcommon_audio_neon.a  
 	obj/webrtc/modules/audio_processing/libaudio_processing_neon.a 
-	obj/webrtc/modules/video_processing/libvideo_processing_neon.a'
+	obj/webrtc/modules/video_processing/libvideo_processing_neon.a
+	obj/webrtc/modules/video_processing/libvideo_processing.a'
 
 export DEVICE_LIBFILES_32='obj/webrtc/modules/audio_coding/libisac_neon.a
 	obj/webrtc/modules/audio_coding/libisac_fix.a
@@ -87,50 +87,36 @@ export SIMULATOR_LIBFILES='obj/webrtc/common_audio/libcommon_audio_sse2.a
 	obj/webrtc/modules/audio_processing/libaudio_processing_sse2.a
 	obj/webrtc/modules/video_processing/libvideo_processing_sse2.a
 	obj/webrtc/common_audio/libcommon_audio_sse2.a
-	obj/third_party/libvpx/libvpx_yasm.a
-	obj/third_party/libvpx/libvpx_intrinsics_sse2/libvpx_intrinsics_sse2.a
-	obj/third_party/libvpx/libvpx_intrinsics_ssse3/libvpx_intrinsics_ssse3.a
-	obj/third_party/libvpx/libvpx_intrinsics_mmx/libvpx_intrinsics_mmx.a
-	obj/third_party/libvpx/libvpx_intrinsics_mmx/libvpx_intrinsics_avx.a
-	obj/third_party/libvpx/libvpx_intrinsics_mmx/libvpx_intrinsics_avx2.a'
+	obj/webrtc/modules/video_processing/libvideo_processing_sse2.a
+	obj/third_party/libvpx/libvpx_yasm.a'
 	
 
-
+echo "Building device libs"
+echo "===================="
  gn gen out/Release-device-arm32 --args='target_os="ios" target_cpu="arm" is_component_build=false is_debug=false'
  ninja -C out/Release-device-arm32 AppRTCMobile
  gn gen out/Release-device-arm64 --args='target_os="ios" target_cpu="arm64" is_component_build=false is_debug=false'
  ninja -C out/Release-device-arm64 AppRTCMobile
- #gn gen out/Release-sim32 --args='target_os="ios" target_cpu="x86" is_component_build=false'
- #ninja -C out/Release-sim32  AppRTCMobile
- #gn gen out/Release-sim64 --args='target_os="ios" target_cpu="x64" is_component_build=false'
- #ninja -C out/Release-sim64  AppRTCMobile
-
- #libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_sse2/libvpx_intrinsics_sse2.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_sse2/*.o
- #libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_sse2/libvpx_intrinsics_sse2.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_sse2/*.o
- #libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_ssse3/libvpx_intrinsics_ssse3.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_ssse3/*.o
- #libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_ssse3/libvpx_intrinsics_ssse3.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_ssse3/*.o
- #libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_mmx/libvpx_intrinsics_mmx.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_mmx/*.o
- #libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_mmx/libvpx_intrinsics_mmx.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_mmx/*.o
- #libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_sse4_1/libvpx_intrinsics_sse4_1.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_sse4_1/*.o
- #libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_sse4_1/libvpx_intrinsics_sse4_1.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_sse4_1/*.o
-# libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_avx/libvpx_intrinsics_avx.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_avx/*.o
-# libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_avx/libvpx_intrinsics_avx.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_avx/*.o
-# libtool -static -o out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_avx2/libvpx_intrinsics_avx2.a out/Debug-sim32/obj/third_party/libvpx/libvpx_intrinsics_avx2/*.o
-# libtool -static -o out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_avx2/libvpx_intrinsics_avx2.a out/Debug-sim64/obj/third_party/libvpx/libvpx_intrinsics_avx2/*.o
-  
+echo "Building simulator libs"
+echo "===================="
+ gn gen out/Release-sim32 --args='target_os="ios" target_cpu="x86" is_component_build=false'
+ ninja -C out/Release-sim32  AppRTCMobile
+ gn gen out/Release-sim64 --args='target_os="ios" target_cpu="x64" is_component_build=false'
+ ninja -C out/Release-sim64  AppRTCMobile
+ 
 
 echo "Building simulator libs"
 echo "===================="
- #cd out/Release-sim64 
- #libtool -static -o libWebRTC-sim64-full.a $LIBFILES $SIMULATOR_LIBFILES 
- #strip -S -x -o ibWebRTC-sim64.a -r libWebRTC-sim64-full.a
- #cd ../../out/Release-sim32 
- #libtool -static -o libWebRTC-sim32-full.a $LIBFILES $SIMULATOR_LIBFILES 
+ cd out/Release-sim64 
+ libtool -static -o libWebRTC-sim64-full.a $LIBFILES $SIMULATOR_LIBFILES 
+ strip -S -x -o libWebRTC-sim64.a -r libWebRTC-sim64-full.a
+ cd ../../out/Release-sim32 
+ strip -S -x -o libWebRTC-sim32.a -r libWebRTC-sim32-full.a 
 
 echo "Building device libs"
 echo "===================="
 
-cd out/Release-device-arm32 
+cd ../../out/Release-device-arm32 
 libtool -static -o libWebRTC-arm32-full.a $LIBFILES $DEVICE_LIBFILES_COMMON $DEVICE_LIBFILES_32 
 strip -S -x -o libWebRTC-arm32.a -r libWebRTC-arm32-full.a
 
@@ -143,7 +129,7 @@ echo "===================="
 cd ../../out
 pwd
 ls
-#lipo -create Release-sim32/libWebRTC-sim32-full.a Release-sim64/libWebRTC-sim64-full.a Release-device-arm32/libWebRTC-arm32-full.a Debug-device-arm64/libWebRTC-arm64-full.a -output libWebRTC.a
+lipo -create Release-sim32/libWebRTC-sim32.a Release-sim64/libWebRTC-sim64.a Release-device-arm32/libWebRTC-arm32.a Release-device-arm64/libWebRTC-arm64.a -output libWebRTC.a
 lipo -create Release-device-arm32/libWebRTC-arm32.a Release-device-arm64/libWebRTC-arm64.a -output libWebRTC.a
 
 
