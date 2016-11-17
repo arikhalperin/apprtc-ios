@@ -12,4 +12,3 @@ Known issues:
  the device connects
 
 
-## About
